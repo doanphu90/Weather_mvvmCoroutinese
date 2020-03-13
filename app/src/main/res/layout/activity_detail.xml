@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.DetailActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/ic_back"
+            android:padding="@dimen/dimen_5dp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Detail"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_textview_20sp"
+            app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/im_wearther"
+        android:layout_width="@dimen/dimen_60dp"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="@drawable/ic_action_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ll_title" />
+
+    <LinearLayout
+        android:id="@+id/ll_wearther"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/im_wearther">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/humidity"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_textsize_14sp" />
+
+        <ImageView
+            android:id="@+id/im_humidity"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/black_humidity" />
+
+        <TextView
+            android:id="@+id/tv_humidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_temp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@+id/ll_wearther">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/tempc"
+            android:textColor="@color/black"
+            android:textSize="@dimen/dimen_textsize_14sp" />
+
+        <ImageView
+            android:id="@+id/im_temp"
+            android:layout_width="@dimen/dimen_20dp"
+            android:layout_height="@dimen/dimen_20dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/ic_temp" />
+
+        <TextView
+            android:id="@+id/tv_temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dimen_10dp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

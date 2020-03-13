@@ -1,0 +1,2 @@
+rootProject.name='SP_Weather_App'
+include ':app'

@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">SP_Weather_App</string>
+    <string name="home">Home</string>
+    <string name="input_text">input text</string>
+    <string name="humidity">Humidity:</string>
+    <string name="tempc">TempC:</string>
+    <string name="recent_search">Recent Search</string>
+    <string name="not_recent_search">recent search not found!</string>
+</resources>

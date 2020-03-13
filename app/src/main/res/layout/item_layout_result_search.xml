@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/ll_item"
+    android:background="@drawable/item_bg_search"
+    android:layout_margin="@dimen/dimen_5dp"
+    android:layout_marginBottom="@dimen/dimen_10dp"
+    android:orientation="vertical">
+    <TextView
+        android:id="@+id/tv_city"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ha Noi"
+        android:textSize="@dimen/dimen_textsize_16sp"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/tv_country"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Viet Nam"
+        android:textSize="@dimen/dimen_textsize_14sp"
+        android:textColor="@color/black_stranparen75"/>
+</LinearLayout>
